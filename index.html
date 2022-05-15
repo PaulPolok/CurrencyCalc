@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator walut</title>
+    <link href="/css/style.css" rel="stylesheet">
+    <link href="/css/form.css" rel="stylesheet">
+    <script defer src="/js/script.js" rel="script"> </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Whisper&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css"
+        href="http://yui.yahooapis.com/3.18.1/build/cssnormalize/cssnormalize-min.css">
+
+
+</head>
+
+<body class="body">
+    <form class="form js-form">
+        <fieldset class="form__fieldset">
+            <legend class="form__legend">Kalkulator walut</legend>
+            <p>
+                <label class="form__label">
+                    <span class="form__labelText">Podaj kwotę: </span><input class="form__field js-money" type="number"
+                        min="1" step="0.01" name="money">
+                </label>
+            </p>
+            <p>
+                <select class="form__select js-currency" name="currency">
+                    <option value="EUR" selected>Euro</option>
+                    <option value="DOL">Dolar</option>
+                    <option value="GBP">Funt brytyjski</option>
+                </select>
+            </p>
+            <p>
+                <button class="form__button" name="submit">Przelicz</button>
+            </p>
+            <p>
+                <span class="form__labelText">Kwota po przewalutowaniu: </span>
+                <span class="form__result js-result">N/A</span>
+            </p>
+        </fieldset>
+    </form>
+</body>
+
+</html>
