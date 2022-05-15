@@ -8,6 +8,7 @@
 .form__fieldset {
     border-color: teal;
     border-radius: 20px;
+    background-color: #fff;
 }
 
 .form__legend {
